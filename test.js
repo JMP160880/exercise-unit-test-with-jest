@@ -6,17 +6,17 @@ test('adds 14 + 9 to equal 23', () => {
 
 const {fromEuroToDollar} = require('./app.js');
 test("One euro should be 1.2 dollars", function(){
-   const  { fromEuroToDollar } = require('./app.js')
+   let totalDolar = fromEuroToDollar(1);
    expect(fromEuroToDollar(1)).toBe(1.2);
 })
 const {fromEuroToYen} = require('./app.js');
 test("One euro should be 127.9 yennes", function(){
-   const  { fromEuroToYen } = require('./app.js')
+   let totalYen = fromEuroToYen(1);
    expect(fromEuroToYen(1)).toBe(127.9);
 })
 const {fromEuroToPound} = require('./app.js');
 test("One euro should be 0.8 pounds ", function(){
-   const  { fromEuroToPound } = require('./app.js')
+   let totalPound = fromEuroToPound(1);
    expect(fromEuroToPound(1)).toBe(0.8);
 }) 
 
