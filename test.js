@@ -18,5 +18,5 @@ const {fromEuroToPound} = require('./app.js');
 test("One euro should be 0.8 pounds ", function(){
    const  { fromEuroToPound } = require('./app.js')
    expect(fromEuroToPound(1)).toBe(0.8);
-})
+}) 
 
